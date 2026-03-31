@@ -1,0 +1,214 @@
+/*
+ * WSC & Tier 1 Performance — Brand Kit
+ * Design Philosophy: "The Performance Codex"
+ * 
+ * BRAND TOKENS:
+ * Tier 1 Dark: #1a1d21 (charcoal), #22262b (card), #2a2e34 (surface)
+ * Tier 1 Text: #e8e8e8 (primary), #a0a5ad (muted)
+ * WSC Warm: #e8e0d3 (parchment light), #ded6c9 (parchment mid), #faf9f5 (cream)
+ * WSC Text: #0e0a07 (warm near-black), #4b4038 (secondary), #84786f (muted)
+ * Shared Blue: #3b82f6 (primary interactive), #172554 (deep navy)
+ * Navy Bridge: #0d1b2a
+ * 
+ * TYPOGRAPHY:
+ * Tier 1 Display: Oswald 700, uppercase, -0.02em letter-spacing
+ * WSC Display: Inter 300, -0.025em letter-spacing
+ * Body: Inter 400/500
+ * 
+ * RADIUS: 0rem (Tier 1), 0.125rem (WSC) — NEVER rounded
+ */
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: 0rem;
+  --radius-md: 0rem;
+  --radius-lg: 0rem;
+  --radius-xl: 0.125rem;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0rem;
+  /* Tier 1 Dark Theme (default) */
+  --background: oklch(0.148 0.006 250);
+  --foreground: oklch(0.92 0.003 250);
+  --card: oklch(0.168 0.006 250);
+  --card-foreground: oklch(0.92 0.003 250);
+  --popover: oklch(0.168 0.006 250);
+  --popover-foreground: oklch(0.92 0.003 250);
+  --primary: oklch(0.6 0.2 250);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.2 0.006 250);
+  --secondary-foreground: oklch(0.85 0.003 250);
+  --muted: oklch(0.22 0.006 250);
+  --muted-foreground: oklch(0.65 0.01 250);
+  --accent: oklch(0.6 0.2 250);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.6 0.2 250);
+  --sidebar: oklch(0.12 0.008 250);
+  --sidebar-foreground: oklch(0.92 0.003 250);
+  --sidebar-primary: oklch(0.6 0.2 250);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.2 0.006 250);
+  --sidebar-accent-foreground: oklch(0.92 0.003 250);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.6 0.2 250);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  a[href],
+  select:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      max-width: 1400px;
+    }
+  }
+
+  /* Brand-specific utilities */
+  .font-display {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+
+  .font-display-light {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+  }
+
+  .tier1-surface {
+    background-color: #1a1d21;
+    color: #e8e8e8;
+  }
+
+  .wsc-surface {
+    background-color: #e8e0d3;
+    color: #0e0a07;
+  }
+
+  .navy-surface {
+    background-color: #0d1b2a;
+    color: #e8e8e8;
+  }
+
+  .brand-blue {
+    color: #3b82f6;
+  }
+
+  .copy-btn {
+    transition: all 150ms ease;
+  }
+
+  .copy-btn:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1d21;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #60a5fa;
+  }
+
+  /* Section transitions */
+  .section-enter {
+    animation: sectionEnter 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes sectionEnter {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .stagger-1 { animation-delay: 0ms; }
+  .stagger-2 { animation-delay: 60ms; }
+  .stagger-3 { animation-delay: 120ms; }
+  .stagger-4 { animation-delay: 180ms; }
+  .stagger-5 { animation-delay: 240ms; }
+  .stagger-6 { animation-delay: 300ms; }
+}
