@@ -19,6 +19,10 @@ export const LOGOS = {
     white: `${CDN}/tier1_logo_white_e523441d.webp`,
     blue: `${CDN}/tier1_logo_white_e523441d.webp`, // white on blue bg
   },
+  tier1Golf: {
+    white: `${CDN}/tier1_GOLF_logo_White_transparent_1abb07d2.jpg`,
+    black: `${CDN}/tier1_GOLF_logo_Black_transparent_45efe455.jpg`,
+  },
 };
 
 export const TIER1_COLORS = [
@@ -74,9 +78,16 @@ export const TIER1_COLORS = [
   {
     token: "Red Accent",
     hex: "#ef4444",
-    usage: "Alerts, critical indicators, urgency markers.",
+    usage: "Alerts, critical indicators, urgency markers. Tryouts, deadlines, closures. Never decorative.",
     category: "tier1",
     textColor: "#ffffff",
+  },
+  {
+    token: "Amber Accent (Operational)",
+    hex: "#f59e0b",
+    usage: "Operational alerts only — schedule changes, facility updates, weather delays. Distinct from blue (positive/announcement) and red (urgent/critical). Never decorative.",
+    category: "tier1",
+    textColor: "#1a1d21",
   },
   {
     token: "Subtle Border",
@@ -104,9 +115,9 @@ export const WSC_COLORS = [
     textColor: "#e8e0d3",
   },
   {
-    token: "Navy Accent",
+    token: "Navy",
     hex: "#0d1b2a",
-    usage: "Feature sections and performance content. Connects WSC to Tier 1.",
+    usage: "Premium register only. Reserved for tagline anchors, brand statements, and elevated moments — used ~once or twice a month. Equivalent to Tier 1’s manifesto register.",
     category: "wsc",
     textColor: "#e8e0d3",
   },
@@ -125,16 +136,16 @@ export const WSC_COLORS = [
     textColor: "#0e0a07",
   },
   {
-    token: "Parchment Light",
+    token: "Parchment",
     hex: "#e8e0d3",
-    usage: "Primary light surface. Most common readable background. Warm off-white.",
+    usage: "Everyday community surface. Used for narrative posts, brand voice anchors, week recaps, and event posts. The ‘warm baseline’ of the WSC feed.",
     category: "wsc",
     textColor: "#0e0a07",
   },
   {
     token: "Cream",
     hex: "#faf9f5",
-    usage: "Lightest background for maximum-contrast areas and card surfaces.",
+    usage: "Premium / structured surface. Used for member spotlights, program announcements, membership tier posts, and recurring schedules. Signals a more structured or higher-stakes post than everyday content.",
     category: "wsc",
     textColor: "#0e0a07",
   },
@@ -162,7 +173,42 @@ export const WSC_COLORS = [
   {
     token: "Accent / Link Blue",
     hex: "#4cabfd",
-    usage: "Interactive elements, hyperlinks, and CTAs. Lighter blue variant consistent with Tier 1 accent family.",
+    usage: "Interactive elements, hyperlinks, and CTAs. Lighter blue variant consistent with Tier 1 accent family. Also used for decorative edges and accent text.",
+    category: "wsc",
+    textColor: "#0e0a07",
+  },
+  {
+    token: "Deep Blue",
+    hex: "#1e6fb8",
+    usage: "Handwritten Caveat accent color. Primary accent for deep blue text moments, pretitle lines, and deep-blue checkmarks. Always paired with Caveat or Inter 500+.",
+    category: "wsc",
+    textColor: "#ffffff",
+  },
+  {
+    token: "Soft Blue",
+    hex: "#b8dcf9",
+    usage: "Italic emphasis highlight blocks only. Placed behind the one italic moment per post. Never used as a background for full sections or as a decorative accent.",
+    category: "wsc",
+    textColor: "#0d1b2a",
+  },
+  {
+    token: "Lighter Blue",
+    hex: "#d6e9f7",
+    usage: "Softer variant of soft blue. Used for borders, secondary highlight blocks, and Caveat example pill borders.",
+    category: "wsc",
+    textColor: "#0d1b2a",
+  },
+  {
+    token: "Sage",
+    hex: "#8fa687",
+    usage: "Calendar category marker only. Used as W-08 event-type dots and T-06 color stripe. NEVER used as a decorative accent outside calendar contexts.",
+    category: "wsc",
+    textColor: "#0e0a07",
+  },
+  {
+    token: "Sun",
+    hex: "#f0b85a",
+    usage: "Calendar category marker only. Used as W-08 event-type dots and T-06 color stripe. NEVER used as a decorative accent outside calendar contexts.",
     category: "wsc",
     textColor: "#0e0a07",
   },

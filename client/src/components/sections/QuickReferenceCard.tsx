@@ -21,8 +21,16 @@ const TIER1_QUICK = {
     { name: "Blue Accent", hex: "#3b82f6", label: "Brand Blue" },
     { name: "Text", hex: "#e8e8e8", label: "Off-White" },
     { name: "Red Alert", hex: "#ef4444", label: "Red" },
+    { name: "Operational", hex: "#f59e0b", label: "Operational" },
   ],
-  fonts: ["Oswald 700 — Headlines", "Inter Regular/Medium — Body"],
+  fonts: ["Oswald 700 — Headlines", "Inter Regular/Medium — Body", "Inter Light 300 — Supporting Copy"],
+  statusBadges: [
+    { label: "Standard", desc: "Announcements, enrollment opens, new programs" },
+    { label: "Alert", desc: "Weather delays, schedule changes, facility issues" },
+    { label: "Urgent", desc: "Tryout deadlines, full closures, time-critical" },
+  ],
+  surfaceRoles: [] as { label: string; desc: string }[],
+  italicRule: "",
   voiceWords: ["Direct", "Earned", "Precise", "Demanding", "Honest"],
   neverSay: ["Easy", "Fun", "Casual", "Just", "Try", "Exciting", "Amazing"],
   doSay: ["Compete", "Standard", "Earn", "Perform", "Execute", "Develop"],
@@ -45,6 +53,9 @@ const TIER1_QUICK = {
     "Use recreational language (fun, casual, easy)",
     "Post without approved hashtags",
     "Use logo on busy/clashing backgrounds",
+    "Put pricing or discounts on the post canvas (caption only)",
+    "Use Red badge for non-urgent content",
+    "Use rounded corners on Tier 1 Instagram graphics",
   ],
 };
 
@@ -53,12 +64,29 @@ const WSC_QUICK = {
   tagline: "Elevate Your Game. Enrich Your Life.",
   secondaryTagline: "Train Without Limits",
   colors: [
-    { name: "Parchment", hex: "#e8e0d3", label: "Warm Off-White" },
+    { name: "Post Background", hex: "#e8e0d3", label: "Post Background" },
+    { name: "Card / Container", hex: "#faf9f5", label: "Card / Container" },
+    { name: "Accent / Data Bars", hex: "#0d1b2a", label: "Accent / Data Bars" },
     { name: "Dark Base", hex: "#0a0704", label: "Warm Black" },
-    { name: "Navy Accent", hex: "#0d1b2a", label: "Deep Navy" },
     { name: "Link Blue", hex: "#4cabfd", label: "Light Blue" },
+    { name: "Italic Highlight", hex: "#bfdbfe", label: "Italic Highlight" },
+    { name: "Category Dot", hex: "#a7c4a0", label: "Category Dot" },
+    { name: "Category Dot", hex: "#f5d87e", label: "Category Dot" },
   ],
-  fonts: ["Inter 700 — Headlines", "Inter Regular — Body"],
+  fonts: [
+    "Inter 200 ExtraLight — Display headlines (large, tight tracking)",
+    "Inter 300 Light — Body copy",
+    "Inter 400 Regular — UI & captions",
+    "Inter italic — One word/phrase per post for warmth",
+    "Caveat 400–700 — ONE accent line per post only",
+  ],
+  statusBadges: [] as { label: string; desc: string }[],
+  surfaceRoles: [
+    { label: "Parchment #e8e0d3", desc: "Primary post background — all Instagram posts start here" },
+    { label: "Cream #faf9f5", desc: "Card & container surface — inner panels, stat boxes" },
+    { label: "Navy #0d1b2a", desc: "Accent bars & data callouts only — never full background" },
+  ],
+  italicRule: "Use italic on ONE word or short phrase per post. e.g. 'Summer *is here*' — adds warmth without decoration.",
   voiceWords: ["Welcoming", "Community", "Premium", "Inclusive", "Aspirational"],
   neverSay: ["Exclusive", "Elite only", "Members only", "Restricted", "Limited"],
   doSay: ["Community", "Facility", "Programs", "Members", "Campus", "Experience"],
@@ -81,6 +109,12 @@ const WSC_QUICK = {
     "Use cold, intimidating tone in member communications",
     "Post facility content without WSC branding",
     "Use logo on busy/clashing backgrounds",
+    "Lead with price on the post canvas — price belongs in caption or bio",
+    "Use Navy (#0d1b2a) as a full post background — accent bars only",
+    "Use urgency theater (ALL CAPS, 🔥, 'ACT FAST') — state real numbers calmly",
+    "Use Caveat for more than one accent line per post — one whisper only",
+    "Use Soft Blue, Sage, or Sun as post backgrounds — accent tools only",
+    "Stack multiple italic highlights in one post — one per post maximum",
   ],
 };
 
@@ -248,6 +282,83 @@ function ReferenceCard({ data, side }: { data: typeof TIER1_QUICK; side: "A" | "
               </div>
             ))}
           </div>
+
+          {data.statusBadges.length > 0 && (
+            <div style={{ marginBottom: "16px" }}>
+              <div style={{
+                fontFamily: "Inter, sans-serif",
+                fontSize: "9px",
+                fontWeight: 700,
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                color: sectionTitleColor,
+                marginBottom: "8px",
+                borderBottom: `1px solid ${tagBorder}`,
+                paddingBottom: "4px",
+              }}>
+                Status Badges
+              </div>
+              {data.statusBadges.map((badge) => (
+                <div key={badge.label} style={{ marginBottom: "6px" }}>
+                  <div style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", fontWeight: 700, color: textColor, textTransform: "uppercase" }}>
+                    {badge.label}
+                  </div>
+                  <div style={{ fontFamily: "Inter, sans-serif", fontSize: "9px", color: mutedColor, lineHeight: 1.35 }}>
+                    {badge.desc}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {data.surfaceRoles.length > 0 && (
+            <div style={{ marginBottom: "16px" }}>
+              <div style={{
+                fontFamily: "Inter, sans-serif",
+                fontSize: "9px",
+                fontWeight: 700,
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                color: sectionTitleColor,
+                marginBottom: "8px",
+                borderBottom: `1px solid ${tagBorder}`,
+                paddingBottom: "4px",
+              }}>
+                Surface Roles
+              </div>
+              {data.surfaceRoles.map((role) => (
+                <div key={role.label} style={{ marginBottom: "6px" }}>
+                  <div style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", fontWeight: 700, color: textColor }}>
+                    {role.label}
+                  </div>
+                  <div style={{ fontFamily: "Inter, sans-serif", fontSize: "9px", color: mutedColor, lineHeight: 1.35 }}>
+                    {role.desc}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {data.italicRule && (
+            <div style={{ marginBottom: "16px" }}>
+              <div style={{
+                fontFamily: "Inter, sans-serif",
+                fontSize: "9px",
+                fontWeight: 700,
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                color: sectionTitleColor,
+                marginBottom: "8px",
+                borderBottom: `1px solid ${tagBorder}`,
+                paddingBottom: "4px",
+              }}>
+                Italic Emphasis Rule
+              </div>
+              <div style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", color: mutedColor, lineHeight: 1.45, fontStyle: "italic" }}>
+                {data.italicRule}
+              </div>
+            </div>
+          )}
 
           {/* Channel tones */}
           <div>

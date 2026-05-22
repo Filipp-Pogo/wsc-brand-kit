@@ -1599,7 +1599,23 @@ function ContentCalendar({ days, dark }: { days: typeof TIER1_CALENDAR; dark: bo
 
 // ─── Sub-section tab switcher ─────────────────────────────────────────────────
 
-type SubTab = "formats" | "visual" | "video" | "captions" | "hashtags" | "pillars" | "dodont" | "anatomy" | "storyboard" | "calendar";
+type SubTab =
+  | "formats"
+  | "visual"
+  | "video"
+  | "captions"
+  | "hashtags"
+  | "pillars"
+  | "dodont"
+  | "anatomy"
+  | "storyboard"
+  | "calendar"
+  | "principles"
+  | "atoms"
+  | "universal"
+  | "announcements"
+  | "credibility"
+  | "antipatterns";
 
 const TIER1_TABS: { id: SubTab; label: string }[] = [
   { id: "formats", label: "Post Formats" },
@@ -1612,13 +1628,163 @@ const TIER1_TABS: { id: SubTab; label: string }[] = [
   { id: "anatomy", label: "Post Anatomy" },
   { id: "storyboard", label: "Reel Storyboard" },
   { id: "calendar", label: "Content Calendar" },
+  { id: "principles", label: "1 · Principles" },
+  { id: "atoms", label: "2 · Atoms" },
+  { id: "universal", label: "3 · Universal" },
+  { id: "announcements", label: "4 · Announcements" },
+  { id: "credibility", label: "5 · Credibility" },
+  { id: "antipatterns", label: "6 · Anti-Patterns" },
 ];
+
+const TIER1_REGISTERS = [
+  {
+    id: "01",
+    name: "Manifesto",
+    freq: "~10% of posts",
+    heroSize: "76–140px Oswald",
+    bestFor: "Tagline anchors · alumni proof · major announcements · season opens",
+    tone: "Demanding · cultural · declarative",
+    accent: "#ef4444",
+  },
+  {
+    id: "02",
+    name: "Teaching",
+    freq: "~50% of posts",
+    heroSize: "28–38px Oswald + Inter Light body",
+    bestFor: "Drill breakdowns · program explainers · coach notes · carousels",
+    tone: "Informative · disciplined · accessible",
+    accent: "#3b82f6",
+  },
+  {
+    id: "03",
+    name: "Documentary",
+    freq: "~40% of posts",
+    heroSize: "17–22px max",
+    bestFor: "Training moments · athlete spotlights · BTS · daily process content",
+    tone: "Cinematic · restrained · earned",
+    accent: "#a0a5ad",
+  },
+];
+
+function DesignSystemIntro({ isTier1 }: { isTier1: boolean }) {
+  if (!isTier1) {
+    return (
+      <div>
+        <div style={{ fontFamily: "Inter, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", color: "#1e6fb8", textTransform: "uppercase", marginBottom: "10px" }}>Page 1</div>
+        <h3 style={{ fontFamily: "Inter, sans-serif", fontWeight: 300, fontSize: "32px", letterSpacing: "-0.04em", color: "#0e0a07", marginBottom: "14px" }}>
+          WSC Instagram · Design Principles
+        </h3>
+        <p style={{ fontFamily: "Inter, sans-serif", fontWeight: 300, fontSize: "15px", color: "#4b4038", lineHeight: 1.7, maxWidth: "760px", marginBottom: "24px" }}>
+          WSC Instagram is a hospitality and community brand, not a sports performance brand. Warmth is a design decision: parchment surfaces, soft emphasis, one accent per post, and real campus life leading the story.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            ["01", "Hospitality First", "Default register is warm, editorial, and facility-proud — never a sports-brand shout."],
+            ["02", "Warmth Is a Design Decision", "Use Inter Light, parchment, cream, italic emphasis, and one soft accent with discipline."],
+            ["03", "Experience Before Price", "Lead with the human or campus moment. Pricing belongs in caption or bio."],
+            ["04", "One Accent Per Post", "One italic moment or Caveat aside is enough. More becomes decoration."],
+          ].map(([id, title, desc]) => (
+            <div key={id} style={{ background: "#faf9f5", border: "1px solid rgba(14,10,7,0.1)", padding: "18px" }}>
+              <div style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", letterSpacing: "0.18em", color: "#1e6fb8", fontWeight: 700, textTransform: "uppercase" }}>Principle {id}</div>
+              <div style={{ fontFamily: "Inter, sans-serif", fontWeight: 300, fontSize: "22px", letterSpacing: "-0.03em", color: "#0e0a07", margin: "6px 0" }}>{title}</div>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#4b4038", lineHeight: 1.55 }}>{desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <div style={{ fontFamily: "Inter, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", color: "#3b82f6", textTransform: "uppercase", marginBottom: "10px" }}>Page 1</div>
+      <h3 style={{ fontFamily: "Oswald, sans-serif", fontWeight: 700, fontSize: "32px", textTransform: "uppercase", letterSpacing: "-0.02em", color: "#ffffff", marginBottom: "14px" }}>
+        Tier 1 Instagram · Design Principles
+      </h3>
+      <p style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", color: "#a0a5ad", lineHeight: 1.7, maxWidth: "760px", marginBottom: "24px" }}>
+        Most posts shouldn't be the manifesto. The brand earns its loud moments by being measured most of the time. This is a design system, not a moodboard — anyone on the team can pick up a template, drop in content, and the post comes out on-brand.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        {TIER1_REGISTERS.map((register) => (
+          <div key={register.id} style={{ backgroundColor: "#22262b", border: "1px solid rgba(255,255,255,0.08)", borderTop: `3px solid ${register.accent}`, padding: "20px" }}>
+            <div style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: register.accent, marginBottom: "4px" }}>
+              Register {register.id}
+            </div>
+            <div style={{ fontFamily: "Oswald, sans-serif", fontWeight: 700, fontSize: "20px", textTransform: "uppercase", letterSpacing: "-0.02em", color: "#fff", marginBottom: "12px" }}>
+              {register.name}
+            </div>
+            {[
+              ["Frequency", register.freq],
+              ["Hero Size", register.heroSize],
+              ["Best For", register.bestFor],
+              ["Tone", register.tone],
+            ].map(([label, value]) => (
+              <div key={label} style={{ marginBottom: "10px" }}>
+                <div style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#a0a5ad", marginBottom: "2px" }}>{label}</div>
+                <div style={{ fontFamily: "Inter, sans-serif", fontSize: "12px", color: label === "Frequency" ? register.accent : "#e8e8e8", lineHeight: 1.45 }}>{value}</div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+      <blockquote style={{ margin: 0, background: "rgba(59,130,246,0.06)", borderLeft: "3px solid #3b82f6", padding: "18px 22px", fontFamily: "Inter, sans-serif", fontSize: "14px", fontStyle: "italic", color: "#e8e8e8", lineHeight: 1.65 }}>
+        "When every post is the manifesto, the brand starts to feel like it's performing intensity rather than embodying it. Anyone can shout. A brand that lets its work speak signals confidence — and audiences read that signal instantly. The mix matters more than any individual post."
+      </blockquote>
+    </div>
+  );
+}
+
+function DesignSystemDetail({ tab, isTier1 }: { tab: SubTab; isTier1: boolean }) {
+  const dark = isTier1;
+  const surface = dark ? "#22262b" : "#faf9f5";
+  const text = dark ? "#e8e8e8" : "#0e0a07";
+  const muted = dark ? "#a0a5ad" : "#4b4038";
+  const accent = dark ? "#3b82f6" : "#1e6fb8";
+  const titleMap: Record<string, string> = {
+    atoms: isTier1 ? "Tier 1 Instagram · The Atoms" : "WSC Instagram · The Atoms",
+    universal: isTier1 ? "Universal Templates" : "Everyday Templates",
+    announcements: isTier1 ? "Announcement Templates" : "Pricing Rules",
+    credibility: isTier1 ? "Credibility Templates" : "Transactional Templates",
+    antipatterns: "Anti-Patterns",
+  };
+  const items = isTier1
+    ? {
+        atoms: ["Blue accents ONE element per post — never two.", "Red is for urgency only; Amber is for operational alerts.", "Sharp corners always — never rounded on Tier 1 graphics.", "Pricing never appears on the canvas."],
+        universal: ["Templates A–F cover training, stats, quotes, lists, photo+label, and culture.", "Use Universal templates for 80%+ of posts."],
+        announcements: ["Templates A-01 through A-08 cover enrollment, tryouts, events, schedule, weather, new programs, closures, and staff.", "Always include a status badge."],
+        credibility: ["Templates C-01 through C-06 cover hero commits, class walls, rankings, milestones, third-party recognition, and alumni.", "Source always named at top."],
+        antipatterns: ["Flyer Trap", "Credibility Burial", "Badge Inflation", "Corner Rounding", "Canvas Pricing"],
+      }
+    : {
+        atoms: ["Parchment is the primary post background.", "Cream is the card/container surface.", "Navy is accent bars and data callouts only.", "One italic moment and one Caveat accent maximum."],
+        universal: ["Community Moment", "Facility Showcase", "Program Spotlight", "Staff/Coach Feature", "Member Story", "Seasonal Moment"],
+        announcements: ["Lead with experience, not price.", "Price belongs in caption or bio.", "Never use discount-flyer hierarchy."],
+        credibility: ["Event Announcement", "Registration Open", "Waitlist", "Cancellation", "Reminder", "Recap"],
+        antipatterns: ["Newsletter Trap", "Discount Flyer", "Text Overload", "Urgency Theater", "Stock Photo Substitute", "Caveat Overuse"],
+      };
+  const list = (items as Record<string, string[]>)[tab] ?? [];
+
+  return (
+    <div style={{ backgroundColor: surface, border: dark ? "1px solid rgba(255,255,255,0.08)" : "1px solid rgba(14,10,7,0.1)", padding: "24px" }}>
+      <div style={{ fontFamily: dark ? "Oswald, sans-serif" : "Inter, sans-serif", fontWeight: dark ? 700 : 300, fontSize: "28px", letterSpacing: dark ? "-0.02em" : "-0.035em", textTransform: dark ? "uppercase" : "none", color: text, marginBottom: "16px" }}>
+        {titleMap[tab]}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {list.map((item) => (
+          <div key={item} style={{ borderLeft: `3px solid ${accent}`, background: dark ? "#1a1d21" : "#e8e0d3", padding: "12px 14px", fontFamily: "Inter, sans-serif", fontSize: "13px", color: muted, lineHeight: 1.55 }}>
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function InstagramGuidelines() {
   const [brand, setBrand] = useState<"tier1" | "wsc">("tier1");
-  const [tab, setTab] = useState<SubTab>("formats");
+  const [tab, setTab] = useState<SubTab>("principles");
 
   const isTier1 = brand === "tier1";
   const dark = isTier1;
@@ -1649,7 +1815,7 @@ export default function InstagramGuidelines() {
           }}
         >
           <button
-            onClick={() => { setBrand("tier1"); setTab("formats"); }}
+            onClick={() => { setBrand("tier1"); setTab("principles"); }}
             style={{
               fontFamily: "Oswald, sans-serif",
               fontWeight: 700,
@@ -1671,7 +1837,7 @@ export default function InstagramGuidelines() {
             Tier 1
           </button>
           <button
-            onClick={() => { setBrand("wsc"); setTab("formats"); }}
+            onClick={() => { setBrand("wsc"); setTab("principles"); }}
             style={{
               fontFamily: "Oswald, sans-serif",
               fontWeight: 700,
@@ -1762,6 +1928,12 @@ export default function InstagramGuidelines() {
 
       {/* Tab content */}
       <div className="max-w-6xl">
+
+        {/* DESIGN SYSTEM */}
+        {tab === "principles" && <DesignSystemIntro isTier1={isTier1} />}
+        {(["atoms", "universal", "announcements", "credibility", "antipatterns"] as SubTab[]).includes(tab) && (
+          <DesignSystemDetail tab={tab} isTier1={isTier1} />
+        )}
 
         {/* POST FORMATS */}
         {tab === "formats" && (

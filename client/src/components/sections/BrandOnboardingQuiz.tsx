@@ -489,6 +489,61 @@ const CHAPTERS: Chapter[] = [
         correct: 1,
         explanation: "The approved 6-frame Reel storyboard is: Opening Hook → Setup → Core Action → Detail → Reaction → Closing Frame. This structure ensures every Reel has a complete narrative arc.",
       },
+      {
+        id: "ig-4",
+        question: "What is the intended register mix for Tier 1 Instagram posts?",
+        options: [
+          "100% manifesto posts so the brand always feels intense",
+          "50% Teaching, 40% Documentary, and 10% Manifesto",
+          "Equal thirds: Teaching, Documentary, and Manifesto",
+          "Mostly promotional announcements with occasional training footage",
+        ],
+        correct: 1,
+        explanation: "Tier 1 earns its loud manifesto moments by being measured most of the time: 50% Teaching, 40% Documentary, and 10% Manifesto.",
+      },
+      {
+        id: "ig-5",
+        question: "Which Tier 1 Instagram badge color should be used for weather delays or schedule changes?",
+        options: ["Blue standard badge", "Amber alert badge", "Red urgent badge", "No badge color is specified"],
+        correct: 1,
+        explanation: "Amber (#f59e0b) is for operational alerts such as weather delays, schedule changes, and facility updates. Red is reserved for urgent/time-critical items.",
+      },
+      {
+        id: "ig-6",
+        question: "Which rule protects Tier 1 post hierarchy?",
+        options: [
+          "Use two or three focal points so the post feels energetic",
+          "One hero per post — never two competing focal points",
+          "Use both blue and red accents to create contrast",
+          "Put pricing on canvas when urgency matters",
+        ],
+        correct: 1,
+        explanation: "A Tier 1 post has one visual hero. Competing focal points dilute the performance signal and make the post feel like a flyer.",
+      },
+      {
+        id: "ig-7",
+        question: "Where does pricing belong in Tier 1 Instagram materials?",
+        options: [
+          "On the post canvas in a large callout",
+          "In the caption only — never on the canvas",
+          "In a red badge if the price is time-sensitive",
+          "In the hero zone next to the headline",
+        ],
+        correct: 1,
+        explanation: "Pricing never belongs on the Tier 1 canvas. It can live in the caption, bio, or registration surface, but not as graphic hierarchy.",
+      },
+      {
+        id: "ig-8",
+        question: "What is the most common Tier 1 Instagram anti-pattern?",
+        options: [
+          "Using real training photography",
+          "The Flyer Trap: gradients, pricing, urgency language, decorative emoji, and multiple CTAs",
+          "Naming the source of third-party recognition at the top",
+          "Using Inter Light for supporting copy",
+        ],
+        correct: 1,
+        explanation: "The Flyer Trap is the most common failure: multi-gradient backgrounds, price-first hierarchy, urgency theater, decorative emoji, and multiple CTAs.",
+      },
     ],
   },
   {
@@ -574,6 +629,121 @@ const CHAPTERS: Chapter[] = [
       },
     ],
   },
+  {
+    id: "wsc-instagram-design-system",
+    title: "WSC Instagram Design System",
+    section: "Application",
+    description: "Know WSC's hospitality-first Instagram rules: warm surfaces, Inter 200/300 typography, one italic moment, one Caveat accent, and no urgency theater.",
+    questions: [
+      {
+        id: "wi-1",
+        question: "What is the default background for WSC Instagram posts?",
+        options: ["Dark charcoal #1a1d21", "Parchment #e8e0d3", "Navy #0d1b2a", "Pure white #ffffff"],
+        correct: 1,
+        explanation: "WSC Instagram starts from parchment (#e8e0d3). Cream is the card/container surface; navy is an accent only.",
+      },
+      {
+        id: "wi-2",
+        question: "How should Navy (#0d1b2a) be used in WSC Instagram posts?",
+        options: [
+          "As the full post background for premium posts",
+          "As accent bars and data callouts only — never full background",
+          "As body copy color on parchment",
+          "As a replacement for the WSC blue link color",
+        ],
+        correct: 1,
+        explanation: "Navy is reserved for accent bars and data callouts. A full navy WSC post shifts the brand into the wrong register.",
+      },
+      {
+        id: "wi-3",
+        question: "Which type weight was added for WSC display headlines?",
+        options: ["Oswald 700", "Inter 200 ExtraLight", "Inter 700 Bold", "Caveat 700"],
+        correct: 1,
+        explanation: "Inter 200 ExtraLight is the WSC display weight for large, tightly tracked, premium moments.",
+      },
+      {
+        id: "wi-4",
+        question: "What is the WSC italic emphasis rule?",
+        options: [
+          "Use italic freely whenever copy needs warmth",
+          "Use italic on one word or short phrase per post",
+          "Never use italic in WSC content",
+          "Use italic only in captions, never on canvas",
+        ],
+        correct: 1,
+        explanation: "WSC gets one italic word or short phrase per post. More than one dilutes the warmth signal.",
+      },
+      {
+        id: "wi-5",
+        question: "What is the correct use of Caveat in WSC posts?",
+        options: [
+          "Use it for headlines and body copy",
+          "Use it for one handwritten accent line only",
+          "Use it in Tier 1 templates to add warmth",
+          "Use it in multiple places when a post is event-focused",
+        ],
+        correct: 1,
+        explanation: "Caveat is a one-line handwritten accent only. It is never a headline face, body face, or Tier 1 font.",
+      },
+      {
+        id: "wi-6",
+        question: "What are Soft Blue, Sage, and Sun used for?",
+        options: [
+          "Full post backgrounds",
+          "Accent tools such as italic highlights and category dots",
+          "Tier 1 alert states",
+          "Logo recoloring",
+        ],
+        correct: 1,
+        explanation: "Soft Blue supports italic highlights. Sage and Sun support schedule/category dots. They are accent tools only, never full backgrounds.",
+      },
+      {
+        id: "wi-7",
+        question: "What does the Urgency Theater anti-pattern look like?",
+        options: [
+          "Stating real numbers calmly",
+          "ALL CAPS, fire emoji, and 'ACT FAST' language",
+          "Using a single warm CTA",
+          "Showing real community moments",
+        ],
+        correct: 1,
+        explanation: "Urgency theater uses ALL CAPS, fire emoji, and panic language. WSC states real numbers calmly instead.",
+      },
+      {
+        id: "wi-8",
+        question: "Why is the Discount Flyer anti-pattern off-brand for WSC?",
+        options: [
+          "It leads with price instead of the experience",
+          "It uses too little information",
+          "It avoids CTAs",
+          "It uses warm photography",
+        ],
+        correct: 0,
+        explanation: "WSC leads with the experience and community value. Pricing belongs in the caption or bio, not as the canvas hierarchy.",
+      },
+      {
+        id: "wi-9",
+        question: "Which template is part of the WSC Everyday category?",
+        options: ["Community Moment", "Hero Commit", "Tryout Urgency", "Ranking Wall"],
+        correct: 0,
+        explanation: "Community Moment is a WSC Everyday template. Hero Commit and Ranking Wall belong to Tier 1 credibility logic.",
+      },
+      {
+        id: "wi-10",
+        question: "How many Caveat accent lines are allowed in one WSC post?",
+        options: ["None", "One", "Two", "Unlimited if small"],
+        correct: 1,
+        explanation: "One Caveat accent line per post. More than one turns the post into a greeting-card treatment.",
+      },
+      {
+        id: "wi-11",
+        question: "What is the maximum number of italic highlights in a WSC post?",
+        options: ["One", "Two", "Three", "No maximum"],
+        correct: 0,
+        explanation: "One italic highlight maximum. Stacking multiple italic highlights dilutes the emotional emphasis.",
+      },
+    ],
+  },
 ];
 
 // ─── Types ─────────────────────────────────────────────────────────────────────
@@ -646,7 +816,7 @@ function ChapterPill({ chapter, status }: { chapter: Chapter; status: "locked" |
 }
 
 /// ─── Current Kit Version (keep in sync with VersionChangelog.tsx KIT_VERSION) ──
-const CURRENT_KIT_VERSION = "1.3.0";
+const CURRENT_KIT_VERSION = "1.5.1";
 const LS_KEY_VERSION = "wsc_brand_kit_certified_version";
 const LS_KEY_NAME    = "wsc_brand_kit_certified_name";
 const LS_KEY_DATE    = "wsc_brand_kit_certified_date";

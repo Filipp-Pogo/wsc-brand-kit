@@ -86,6 +86,23 @@ const TIER1_LOGOS = [
   },
 ];
 
+const TIER1_GOLF_LOGOS = [
+  {
+    name: "Tier 1 Golf — White on Transparent",
+    url: LOGOS.tier1Golf.white,
+    bg: "#1a1d21",
+    label: "Golf — Reversed",
+    usage: "Dark backgrounds, digital surfaces, social posts, apparel on dark stock",
+  },
+  {
+    name: "Tier 1 Golf — Black on Transparent",
+    url: LOGOS.tier1Golf.black,
+    bg: "#f0f0f0",
+    label: "Golf — Primary",
+    usage: "Light backgrounds, print on white stock, documents, parchment surfaces",
+  },
+];
+
 function LogoCard({ logo, index }: { logo: any; index: number }) {
   const [downloading, setDownloading] = useState(false);
 
@@ -247,6 +264,33 @@ export default function LogoGallery() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {TIER1_LOGOS.map((logo, i) => (
+            <LogoCard key={logo.name} logo={logo} index={i} />
+          ))}
+        </div>
+      </div>
+
+      {/* Tier 1 Golf Logos */}
+      <div className="mt-12 max-w-6xl">
+        <div
+          style={{
+            fontFamily: "Oswald, sans-serif",
+            fontWeight: 700,
+            fontSize: "16px",
+            textTransform: "uppercase",
+            letterSpacing: "0.1em",
+            color: "#3b82f6",
+            marginBottom: "8px",
+            paddingBottom: "12px",
+            borderBottom: "1px solid rgba(255,255,255,0.08)",
+          }}
+        >
+          Tier 1 Performance — Golf
+        </div>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#a0a5ad", lineHeight: 1.6, marginBottom: "16px" }}>
+          Sport-specific logo with golf ball mark. Use for all golf program materials, bay signage, apparel, and tournament collateral.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {TIER1_GOLF_LOGOS.map((logo, i) => (
             <LogoCard key={logo.name} logo={logo} index={i} />
           ))}
         </div>

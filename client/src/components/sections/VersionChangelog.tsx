@@ -16,9 +16,9 @@ export const SECTION_VERSIONS: Record<string, string> = {
   "brand-architecture":    "March 27, 2026",
   "core-values":           "March 27, 2026",
   "we-are":                "March 27, 2026",
-  "color-palette":         "March 27, 2026",
-  "typography":            "March 27, 2026",
-  "logos":                 "March 27, 2026",
+  "color-palette":         "May 1, 2026",
+  "typography":            "May 1, 2026",
+  "logos":                 "May 1, 2026",
   "signage":               "March 27, 2026",
   "voice-constants":       "March 27, 2026",
   "tone-matrix":           "March 27, 2026",
@@ -27,19 +27,19 @@ export const SECTION_VERSIONS: Record<string, string> = {
   "channel-guidelines":    "March 27, 2026",
   "terminology":           "March 27, 2026",
   "anti-patterns":         "March 27, 2026",
-  "instagram":             "March 27, 2026",
+  "instagram":             "May 1, 2026",
   "signage-examples":      "March 27, 2026",
   "email-guidelines":      "March 27, 2026",
   "co-branding":           "March 27, 2026",
-  "brand-onboarding-quiz": "March 27, 2026",
+  "brand-onboarding-quiz": "May 1, 2026",
   "voice-scorer":          "March 27, 2026",
-  "changelog":             "March 27, 2026",
-  "quick-reference":       "March 27, 2026",
+  "changelog":             "May 1, 2026",
+  "quick-reference":       "May 1, 2026",
 };
 
 // ─── Current Kit Version ─────────────────────────────────────────────────────
-export const KIT_VERSION = "1.3.0";
-export const KIT_LAST_UPDATED = "March 27, 2026";
+export const KIT_VERSION = "1.5.1";
+export const KIT_LAST_UPDATED = "May 1, 2026";
 
 // ─── Changelog Data ───────────────────────────────────────────────────────────
 type ChangeType = "new" | "updated" | "removed" | "governance";
@@ -57,6 +57,50 @@ interface ChangeEntry {
 }
 
 const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "1.5.1",
+    date: "May 1, 2026",
+    summary: "WSC Instagram recalibration. Caveat font added. Soft companion colors added. All 16 WSC templates updated with warmer treatment. Anti-Pattern 06 (Caveat Overuse) added. Quiz Ch.13 expanded to 11 questions.",
+    requiresRecertification: true,
+    changes: [
+      { type: "updated", section: "Instagram Guidelines — WSC", description: "All 16 WSC templates updated with warmer treatment: Soft Blue italic highlights, Caveat accent lines, Sage/Sun category dots in schedule grids, filled deep blue checkmarks. Anti-Pattern 06 (Caveat Overuse) added with live bad/good comparison." },
+      { type: "updated", section: "Instagram Guidelines — WSC — Principles", description: "Principle 02 reframed to 'Warmth Is a Design Decision.' Principle 04 added: 'One Accent Per Post.' Intro text updated." },
+      { type: "updated", section: "Instagram Guidelines — WSC — Atoms", description: "Caveat added to WSC type scale. Color Roles expanded with Soft Blue, Sage, Sun, Deep Blue Text. Hard Rules expanded from 7 to 9." },
+      { type: "new", section: "Typography — WSC", description: "Caveat (handwritten accent font, 400–700) added to WSC Type Scale with rules card: one accent line per post, 13–18px, rotate ±2°, Deep Blue only." },
+      { type: "new", section: "Color Palette — WSC", description: "Five soft companion colors added: Soft Blue (#bfdbfe), Lighter Blue (#dbeafe), Sage (#a7c4a0), Sun (#f5d87e), Deep Blue Text (#1e3a5f)." },
+      { type: "updated", section: "Brand Onboarding Quiz — Chapter 13", description: "Three new questions added (Q9–11): Caveat correct use, soft companion color roles, italic highlight maximum. Chapter now has 11 questions." },
+      { type: "updated", section: "Quick Reference Card — Side B", description: "Caveat added to WSC typography. Soft Blue, Sage, Sun added to companion colors. Three new Never Do items: Caveat overuse, companion colors as backgrounds, italic highlight stacking." },
+      { type: "updated", section: "Claude System Prompts", description: "Both Opus and Sonnet prompts updated to v2.3 with Caveat accent rules, soft companion color roles, italic highlight technique, and Anti-Pattern 06." },
+    ],
+  },
+  {
+    version: "1.5.0",
+    date: "April 30, 2026",
+    summary: "WSC Instagram Design System v1. Inter 200 ExtraLight added. Parchment/Cream/Navy surface roles codified. Quiz Chapter 13 added. Quick Reference Card Side B updated. Claude System Prompts updated with WSC sections.",
+    requiresRecertification: true,
+    changes: [
+      { type: "new", section: "Instagram Guidelines — WSC", description: "Full 6-page WSC Instagram Design System: Design Principles (hospitality brand, not sports brand), Atoms (Inter 200/300, parchment palette, italic rule), Everyday Templates (6 templates, 2–3 mockups each), Pricing Rules (4 templates), Transactional Templates (6 templates), and Anti-Patterns (5 side-by-side comparisons: Newsletter Trap, Discount Flyer, Text Overload, Urgency Theater, Stock Photo Substitute)." },
+      { type: "updated", section: "Typography — WSC", description: "Inter 200 ExtraLight added as WSC Display weight. Italic Emphasis Rule documented: use italic on one word or short phrase per post for warmth and personality." },
+      { type: "updated", section: "Color Palette — WSC", description: "Surface role distinction codified: Parchment Light (#e8e0d3) = primary post background, Cream (#faf9f5) = card/container surface, Navy (#0d1b2a) = accent bars and data callouts only." },
+      { type: "new", section: "Brand Onboarding Quiz — Chapter 13", description: "WSC Instagram Design System chapter added: 8 questions covering primary background color, Inter 200 display weight, italic emphasis rule, Urgency Theater anti-pattern, Discount Flyer anti-pattern, Navy usage rules, Community Moment template, and Pricing Rules rationale." },
+      { type: "updated", section: "Quick Reference Card — Side B", description: "WSC column updated with Inter 200 display weight, italic emphasis rule, surface role table (Parchment/Cream/Navy), and three new WSC Instagram Never Do items." },
+      { type: "updated", section: "Claude System Prompts", description: "Both Opus and Sonnet prompts updated to v2.2 with WSC Instagram Design System rules: Inter 200 display, italic emphasis, parchment palette, surface role hierarchy, and the five anti-patterns." },
+    ],
+  },
+  {
+    version: "1.4.0",
+    date: "April 30, 2026",
+    summary: "Tier 1 Instagram Design System v1. Amber Accent added. Inter Light added. Quiz Chapter 12 expanded to 8 questions. Quick Reference Card Side A updated with Status Badges.",
+    requiresRecertification: true,
+    changes: [
+      { type: "new", section: "Instagram Guidelines — Tier 1", description: "Full 6-page Tier 1 Instagram Design System: Design Principles, Atoms (grid, type, color, badges), 6 Universal Templates (3 mockups each), 8 Announcement Templates, 6 Credibility Templates, and Anti-Patterns with 5 side-by-side comparisons. 60+ total mockups." },
+      { type: "new", section: "Color Palette — Tier 1", description: "Amber Accent (#f59e0b) added as the third Tier 1 accent color. Used exclusively for operational alerts and status badges." },
+      { type: "updated", section: "Typography — Tier 1", description: "Inter Light (300) added as Body Light for supporting copy, captions, and secondary text in the Tier 1 type scale." },
+      { type: "updated", section: "Brand Onboarding Quiz — Chapter 12", description: "Instagram Guidelines chapter expanded from 3 questions to 8. All questions now cover the new Design System: voice registers, atomic rules, template taxonomy, badge color logic, and anti-patterns." },
+      { type: "updated", section: "Quick Reference Card — Side A", description: "Status Badges section added: Blue (Standard), Amber (Alert), Red (Urgent). Never Do list updated with three new Tier 1 Instagram violations." },
+      { type: "updated", section: "Claude System Prompts", description: "Both Opus and Sonnet prompts updated to reference the Tier 1 Instagram Design System, Amber Accent, Inter Light, and the template taxonomy." },
+    ],
+  },
   {
     version: "1.3.0",
     date: "March 27, 2026",
