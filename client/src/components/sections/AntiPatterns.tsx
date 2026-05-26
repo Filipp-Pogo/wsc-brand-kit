@@ -188,7 +188,7 @@ export default function AntiPatterns() {
             maxWidth: "700px",
           }}
         >
-          Every word, every sign, every post is a vote for the kind of organization we are. When the brand is consistent, it builds trust. When it's inconsistent, it creates confusion. The standard is the standard — in how we train, how we coach, and how we communicate.
+          Every word, every sign, every post is a vote for the kind of organization we are. When the brand is consistent, it builds trust. When it's inconsistent, it creates confusion. The same discipline should show up in how we train, how we coach, and how we communicate.
         </p>
       </div>
     </div>

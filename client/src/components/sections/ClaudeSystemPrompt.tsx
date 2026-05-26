@@ -165,8 +165,7 @@ const OPUS_PROMPT = `<system>
 
   <approved_taglines>
     <brand ref="tier1">
-      <tagline primary="true">The Standard Is The Standard.</tagline>
-      <tagline>Train Without Limits.</tagline>
+      <tagline primary="true">Train Without Limits.</tagline>
       <tagline>Built Here.</tagline>
       <tagline>Two Divisions. One System.</tagline>
     </brand>
@@ -313,7 +312,7 @@ const OPUS_PROMPT = `<system>
 
   <hashtags>
     <brand ref="tier1">
-      <primary>#Tier1Performance #BuildHereCompeteEverywhere #TheStandardIsTheStandard #Tier1Academy #FullTimeTennis #FullTimeGolf #PerformancePathway #TrainWithoutLimits</primary>
+      <primary>#Tier1Performance #BuildHereCompeteEverywhere #Tier1Academy #FullTimeTennis #FullTimeGolf #PerformancePathway #TrainWithoutLimits</primary>
       <secondary>#WSCTier1 #WoodinvilleSportsClub #PNWTennis #PNWGolf #JuniorTennis #JuniorGolf #AcademyLife #EliteTraining</secondary>
     </brand>
     <brand ref="wsc">
@@ -378,7 +377,7 @@ Before writing anything: ask yourself — Tier 1 or WSC? Wrong answer = wrong ou
 - Signage → Tier 1: Oswald caps, minimal | WSC: Inter caps, clear, warm
 
 ## APPROVED TAGLINES — USE EXACTLY AS WRITTEN
-Tier 1: "The Standard Is The Standard." / "Train Without Limits." / "Built Here." / "Two Divisions. One System."
+Tier 1: "Train Without Limits." / "Built Here." / "Two Divisions. One System."
 WSC: "Elevate Your Game. Enrich Your Life." / "Your Club. Your Community. Your Game." / "Where Families Play. Where Athletes Are Built."
 
 ## VOCABULARY
@@ -407,7 +406,7 @@ NEVER USE: World-class (no proof), Amazing/Incredible/Awesome, Easy/Fun (Tier 1)
 ☐ Could this be from any other sports club? If yes — rewrite.
 
 ## HASHTAGS
-Tier 1 primary: #Tier1Performance #BuildHereCompeteEverywhere #TheStandardIsTheStandard #Tier1Academy #FullTimeTennis #FullTimeGolf #PerformancePathway #TrainWithoutLimits
+Tier 1 primary: #Tier1Performance #BuildHereCompeteEverywhere #Tier1Academy #FullTimeTennis #FullTimeGolf #PerformancePathway #TrainWithoutLimits
 WSC primary: #WoodinvilleSportsClub #WSC #ElevateYourGame #EnrichYourLife #YourClubYourCommunity #WSCFamily #WoodinvilleWA`;
 
 // ─── CHANNEL TEMPLATES ────────────────────────────────────────────────────────

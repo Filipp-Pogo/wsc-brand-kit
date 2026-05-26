@@ -51,9 +51,9 @@ export default function Typography() {
                 marginBottom: "8px",
               }}
             >
-              THE STANDARD
+              TRAIN WITHOUT
               <br />
-              IS THE STANDARD
+              LIMITS
             </div>
 
             <div
@@ -247,7 +247,7 @@ export default function Typography() {
             </div>
             <div className="space-y-4">
               {[
-                { label: "Hero / H1", sample: "THE STANDARD", style: { fontFamily: "Oswald, sans-serif", fontWeight: 700, fontSize: "clamp(40px, 6vw, 72px)", textTransform: "uppercase" as const, letterSpacing: "-0.02em", color: "#ffffff" }, spec: "Oswald 700 · 96px · -0.02em" },
+                { label: "Hero / H1", sample: "TRAIN WITHOUT LIMITS", style: { fontFamily: "Oswald, sans-serif", fontWeight: 700, fontSize: "clamp(40px, 6vw, 72px)", textTransform: "uppercase" as const, letterSpacing: "-0.02em", color: "#ffffff" }, spec: "Oswald 700 · 96px · -0.02em" },
                 { label: "H2", sample: "PERFORMANCE IDENTITY", style: { fontFamily: "Oswald, sans-serif", fontWeight: 700, fontSize: "clamp(24px, 3vw, 48px)", textTransform: "uppercase" as const, letterSpacing: "-0.02em", color: "#ffffff" }, spec: "Oswald 700 · 48px" },
                 { label: "H3", sample: "Two Divisions / One System", style: { fontFamily: "Oswald, sans-serif", fontWeight: 600, fontSize: "clamp(18px, 2vw, 28px)", textTransform: "uppercase" as const, letterSpacing: "-0.01em", color: "#e8e8e8" }, spec: "Oswald 600 · 28px" },
                 { label: "Body", sample: "We hire top talent and never compromise standards. Excellence is not an exception here — it is the expectation.", style: { fontFamily: "Inter, sans-serif", fontWeight: 400, fontSize: "15px", color: "#a0a5ad" }, spec: "Inter 400 · 15px · 1.65 line-height" },

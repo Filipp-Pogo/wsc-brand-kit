@@ -117,7 +117,7 @@ const WSC_VISUAL_RULES = [
 const TIER1_CAPTION_TEMPLATES = [
   {
     type: "Training Post",
-    template: "[Athlete name] putting in the work.\n\n[One specific detail about what they did — drill, weight, reps, time.]\n\n[One line about what it means for their development.]\n\n#Tier1Performance #TheStandardIsTheStandard",
+    template: "[Athlete name] putting in the work.\n\n[One specific detail about what they did — drill, weight, reps, time.]\n\n[One line about what it means for their development.]\n\n#Tier1Performance #TrainWithoutLimits",
     note: "Lead with the person, not the program. Specific details over generic hype.",
   },
   {
@@ -132,7 +132,7 @@ const TIER1_CAPTION_TEMPLATES = [
   },
   {
     type: "Culture / Behind-the-Scenes",
-    template: "[Time of day or specific moment]. [What's happening — no fluff.]\n\n[One line that reveals something real about the culture.]\n\n#Tier1Performance #TheStandardIsTheStandard",
+    template: "[Time of day or specific moment]. [What's happening — no fluff.]\n\n[One line that reveals something real about the culture.]\n\n#Tier1Performance #BuildHereCompeteEverywhere",
     note: "Authenticity over polish. Imperfect real moments beat perfect staged ones.",
   },
   {
@@ -171,7 +171,7 @@ const WSC_CAPTION_TEMPLATES = [
 ];
 
 const TIER1_HASHTAGS = {
-  primary: ["#Tier1Performance", "#TheStandardIsTheStandard", "#WeDontBuildRecreationalPlayers"],
+  primary: ["#Tier1Performance", "#BuildHereCompeteEverywhere", "#WeDontBuildRecreationalPlayers"],
   secondary: ["#APL", "#AthleticPerformanceLab", "#TennisDevelopment", "#GolfDevelopment", "#AthleteDevelopment"],
   avoid: ["#Sports", "#Training", "#Fitness", "#Motivation", "#Hustle", "#Grind", "#Goals", "#Blessed"],
 };

@@ -126,7 +126,7 @@ const BRAND_TOKENS = {
     subtext: "#a0a5ad",
     label: "TIER 1 PERFORMANCE",
     website: "tier1performance.com",
-    tagline: "THE STANDARD IS THE STANDARD.",
+    tagline: "TRAIN WITHOUT LIMITS.",
     address: "Woodinville Sports Club · Woodinville, WA",
     badgeBg: "rgba(59,130,246,0.15)",
     badgeColor: "#3b82f6",

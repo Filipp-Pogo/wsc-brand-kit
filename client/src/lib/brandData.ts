@@ -219,7 +219,7 @@ export const BRAND_ARCHITECTURE = [
     brand: "Tier 1 Performance",
     role: "Performance Brand",
     description: "The performance brand for all programming — tennis, golf, and athletic development. Appears on marketing materials, social content, athlete communications, tournament presence, coaching apparel, and any public-facing performance context.",
-    tagline: "The Standard Is The Standard.",
+    tagline: "Train Without Limits.",
     color: "#1a1d21",
     textColor: "#e8e8e8",
     accentColor: "#3b82f6",
@@ -338,7 +338,7 @@ export const VOICE_CONSTANTS = [
     description: "We speak with conviction about what we do and what we stand for. We do not qualify or hedge our identity. But we never punch down — our confidence comes from our culture, not comparison.",
     examples: [
       { type: "dont", text: "We think we might be one of the better programs in the area." },
-      { type: "do", text: "The Standard Is The Standard. Our alumni destinations speak for themselves." },
+      { type: "do", text: "Our alumni destinations speak for themselves." },
     ],
   },
   {
@@ -445,7 +445,7 @@ export const TAGLINES = [
   {
     brand: "Tier 1 Performance",
     lines: [
-      { text: "The Standard Is The Standard.", usage: "Primary culture anchor. Hero copy, program introductions, academy communications." },
+      { text: "Train Without Limits", usage: "Primary performance tagline. Use in hero copy, program introductions, academy communications, and court-specific copy." },
       { text: "We Don't Build Recreational Players. We Build Competitors.", usage: "Core positioning statement. The clearest We Are / We Are Not line in the brand." },
       { text: "Two Divisions / One System", usage: "Program architecture framing for Tennis + Golf. Use in program descriptions, academy introductions, and enrollment materials." },
     ],
@@ -485,7 +485,7 @@ export const VOCABULARY = [
 
 export const SIGNAGE_CONCEPTS = [
   {
-    name: "The Dark Standard",
+    name: "Dark Performance",
     brand: "Tier 1",
     description: "Primary exterior and lobby signage. The default branded sign. Performance-forward, premium, serious.",
     bgColor: "#1a1d21",
@@ -493,7 +493,7 @@ export const SIGNAGE_CONCEPTS = [
     accentColor: "#3b82f6",
     fontSize: "clamp(24px, 4vw, 40px)",
     textAlign: "left",
-    mockupText: "THE STANDARD\nIS THE STANDARD",
+    mockupText: "TRAIN WITHOUT\nLIMITS",
     mockupSubtext: "TIER 1 PERFORMANCE",
     specs: ["Oswald 700 Uppercase", "Monument / Facade", "Lobby Feature Wall"],
   },
@@ -798,8 +798,8 @@ export const ANTI_PATTERNS = [
     brand: "Both Brands",
     reason: "Publishing tagline variations that are not on the confirmed list — paraphrasing protected brand lines — dilutes the equity built in those specific phrases.",
     example: {
-      wrong: "Our standard is your standard. / Elevate and Enrich. / The Standard Never Wavers.",
-      right: "The Standard Is The Standard. / Elevate Your Game. Enrich Your Life.",
+      wrong: "Train Beyond Limits. / Elevate and Enrich. / The Limit Never Wavers.",
+      right: "Train Without Limits. / Elevate Your Game. Enrich Your Life.",
     },
   },
   {

@@ -253,7 +253,7 @@ const SIGN_CATEGORIES: SignCategory[] = [
         format: "Large-Format Entrance Banner (24\"\u00d736\")",
         size: "24\" \u00d7 36\" (portrait)",
         material: "Dibond 3mm aluminum composite, UV print, matte finish, standoff hardware",
-        defaultLines: ["TIER 1 PERFORMANCE", "ACADEMY", "THE STANDARD IS THE STANDARD."],
+        defaultLines: ["TIER 1 PERFORMANCE", "ACADEMY", "TRAIN WITHOUT LIMITS"],
         editableLines: [false, false, false],
         notes:
           "Large-format portrait banner for the academy entrance lobby or main corridor. Tier 1 cold dark palette. Fixed text — do not alter wording or substitute WSC branding. Counterpart to the WSC Welcome Banner.",
@@ -651,7 +651,7 @@ const SIGN_CATEGORIES: SignCategory[] = [
         format: "Retractable Banner",
         size: "33\" × 80\"",
         material: "Polyester banner, retractable aluminum stand",
-        defaultLines: ["TIER 1 PERFORMANCE", "SHOWCASE DAY", "THE STANDARD IS THE STANDARD."],
+        defaultLines: ["TIER 1 PERFORMANCE", "SHOWCASE DAY", "TRAIN WITHOUT LIMITS"],
         editableLines: [false, true, false],
         notes:
           "Edit event name only. Tier 1 cold dark palette. Retractable stand is reused — only the banner insert is replaced. Used for academy showcase events, college recruitment days, and parent observation sessions.",
@@ -1069,7 +1069,7 @@ function Tier1EntranceBannerMockup() {
         {/* Middle: headline */}
         <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <div style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700, fontSize: "clamp(18px, 5vw, 28px)", color: "#ffffff", letterSpacing: "-0.01em", lineHeight: 1.05, textTransform: "uppercase", marginBottom: "6px" }}>TIER 1<br />PERFORMANCE<br />ACADEMY</div>
-          <div style={{ fontSize: "7px", letterSpacing: "0.18em", color: "#a0a5ad", fontFamily: "'Oswald', sans-serif", marginTop: "8px" }}>THE STANDARD IS THE STANDARD.</div>
+          <div style={{ fontSize: "7px", letterSpacing: "0.18em", color: "#a0a5ad", fontFamily: "'Oswald', sans-serif", marginTop: "8px" }}>TRAIN WITHOUT LIMITS</div>
         </div>
         {/* Bottom: wordmark area */}
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "10px", display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>

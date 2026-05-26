@@ -75,7 +75,7 @@ const CHAPTERS: Chapter[] = [
         question: "What is the primary tagline for WSC (Woodinville Sports Club)?",
         options: [
           "Train Without Limits",
-          "The Standard Is The Standard.",
+          "Your Club. Your Community. Your Game.",
           "Elevate Your Game. Enrich Your Life.",
           "Two Divisions. One System.",
         ],
@@ -396,7 +396,7 @@ const CHAPTERS: Chapter[] = [
         id: "tl-1",
         question: "What is the primary tagline for Woodinville Sports Club?",
         options: [
-          "\"The Standard Is The Standard.\"",
+          "\"Your Club. Your Community. Your Game.\"",
           "\"Train Without Limits\"",
           "\"Elevate Your Game. Enrich Your Life.\"",
           "\"Two Divisions / One System\"",
@@ -406,15 +406,15 @@ const CHAPTERS: Chapter[] = [
       },
       {
         id: "tl-2",
-        question: "\"The Standard Is The Standard.\" is used as:",
+        question: "Which Tier 1 tagline is approved for broad performance-facing copy?",
         options: [
-          "WSC's secondary tagline for facility communications",
-          "Tier 1's primary culture anchor — hero copy, program introductions, academy communications",
-          "A generic motivational quote that could appear at any sports club",
-          "A shared tagline used by both Tier 1 and WSC equally",
+          "Elevate Your Game. Enrich Your Life.",
+          "Train Without Limits",
+          "Your Club. Your Community. Your Game.",
+          "Where Families Play. Where Athletes Are Built.",
         ],
         correct: 1,
-        explanation: "'The Standard Is The Standard.' is Tier 1's primary culture anchor — used in hero copy, program introductions, and academy communications. It is not a WSC tagline.",
+        explanation: "'Train Without Limits' is the approved Tier 1 performance tagline for broad performance-facing copy.",
       },
       {
         id: "tl-3",

@@ -14,8 +14,8 @@ import { KIT_VERSION, KIT_LAST_UPDATED } from "./VersionChangelog";
 // ─── Quick Reference Data ─────────────────────────────────────────────────────
 const TIER1_QUICK = {
   brand: "TIER 1 PERFORMANCE",
-  tagline: "The Standard Is The Standard.",
-  secondaryTagline: "Train Without Limits",
+  tagline: "Train Without Limits",
+  secondaryTagline: "Built Here",
   colors: [
     { name: "Background", hex: "#1a1d21", label: "Charcoal" },
     { name: "Blue Accent", hex: "#3b82f6", label: "Brand Blue" },

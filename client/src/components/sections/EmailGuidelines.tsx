@@ -73,7 +73,7 @@ What to bring: [List]
 
 Questions? Reply directly to this email or contact [Coach Name] at [email].
 
-The Standard Is The Standard.
+Train Without Limits.
 Tier 1 Performance Academy`,
     },
     {
@@ -147,7 +147,7 @@ Limited to [X] athletes per cohort.
 
 [CTA Button: View Program Details]
 
-The Standard Is The Standard.
+Train Without Limits.
 Tier 1 Performance Academy`,
     },
     {
