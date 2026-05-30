@@ -218,7 +218,7 @@ export const BRAND_ARCHITECTURE = [
   {
     brand: "Tier 1 Performance",
     role: "Performance Brand",
-    description: "The performance brand for all programming — tennis, golf, and athletic development. Appears on marketing materials, social content, athlete communications, tournament presence, coaching apparel, and any public-facing performance context.",
+    description: "The performance brand for tennis and golf academy programming. Appears on academy marketing materials, social content, athlete communications, tournament presence, coaching apparel, and public-facing tennis or golf performance contexts.",
     tagline: "Train Without Limits.",
     color: "#1a1d21",
     textColor: "#e8e8e8",
@@ -228,7 +228,7 @@ export const BRAND_ARCHITECTURE = [
   {
     brand: "Woodinville Sports Club (WSC)",
     role: "Platform & Facility",
-    description: "The physical home — the 67-acre campus where everything happens. Entry point for community members, recreational athletes, and families. WSC does not carry performance programming identity; Tier 1 does.",
+    description: "The parent platform and physical home — the 67-acre campus where everything happens. Entry point for community members, recreational athletes, families, fitness programming, and APL. WSC can frame APL when parent-brand context is needed.",
     tagline: "Elevate Your Game. Enrich Your Life.",
     color: "#e8e0d3",
     textColor: "#0e0a07",
@@ -237,9 +237,9 @@ export const BRAND_ARCHITECTURE = [
   },
   {
     brand: "Athletic Performance Lab (APL)",
-    role: "Performance Sub-Brand",
-    description: "Performance sub-brand operating under Tier 1 within WSC. Data-driven S&C, sport-specific training. The only dedicated high-performance youth training facility of its kind in the PNW. Presents under Tier 1's performance identity.",
-    tagline: "Two Divisions / One System",
+    role: "WSC Fitness & Performance Lane",
+    description: "WSC fitness and performance programming lane. Data-driven S&C, adult fitness, and sport-support training. APL can support Tier 1 athletes, but it does not sit under Tier 1. Lead with APL branding and add WSC when parent context is needed.",
+    tagline: "Performance Training at WSC",
     color: "#0d1b2a",
     textColor: "#e8e8e8",
     accentColor: "#3b82f6",
@@ -370,7 +370,7 @@ export const TONE_MATRIX = [
   { context: "Sponsor / Partner Outreach", brand: "Both", toneWords: ["Data-forward", "Vision-anchored", "Professional"], sample: "Our athlete development pipeline has placed alumni at Penn, Harvard, Stanford, and USC." },
 
   { context: "Athlete / Coach Communications", brand: "Tier 1", toneWords: ["Direct", "Honest", "Coach-like"], sample: "Morning Andrew. Warm up is on Courts 3 and 4 today." },
-  { context: "S&C / APL-Specific Marketing (Strength & Conditioning / Athletic Performance Lab)", brand: "Tier 1", toneWords: ["Credential-heavy", "Performance-specific", "Differentiated"], sample: "The only dedicated high-performance youth training facility of its kind in the PNW." },
+  { context: "S&C / APL-Specific Marketing (Strength & Conditioning / Athletic Performance Lab)", brand: "APL / WSC", toneWords: ["Credential-heavy", "Performance-specific", "Differentiated"], sample: "Data-driven performance training inside Woodinville Sports Club." },
   { context: "Member / Family Communications", brand: "WSC", toneWords: ["Personal", "Warm", "Name-based", "Proactive"], sample: "Hi Sarah — just a reminder that your family's court reservation is at 10am Saturday on Court 4. See you then!" },
   { context: "Physical Signage (Wayfinding)", brand: "WSC", toneWords: ["Specific", "Directional", "Purposeful"], sample: "Courts 1–6 → | APL Performance Lab ↑ | Family Lounge ←" },
   { context: "Physical Signage (Inspirational)", brand: "Tier 1", toneWords: ["Process-focused", "Culture-affirming", "Non-cliché"], sample: "The standard of the environment dictates the standard of the athlete." },
@@ -719,11 +719,11 @@ export const TERMINOLOGY = [
     category: "Programs & Structure",
     terms: [
       { term: "Academy", avoid: "Program (for Tier 1)", definition: "Tier 1 runs academies, not programs. An academy implies a structured, long-term development system — not a class you sign up for." },
-      { term: "Two Divisions / One System", avoid: "Two separate programs", definition: "Tennis + Golf — two sports, one shared performance methodology. Both divisions train in the APL, follow the same development philosophy, and operate under the Tier 1 identity. Use when describing program architecture." },
+      { term: "Two Divisions / One System", avoid: "Two separate programs", definition: "Tennis + Golf — two sports, one shared Tier 1 academy methodology. APL can support Tier 1 athletes, but APL is its own WSC fitness and performance lane, not a Tier 1 sub-brand. Use when describing Tier 1 program architecture." },
       { term: "Full-Time Tennis", avoid: "Elite program / Advanced program / Tennis program", definition: "The full-time tennis academy track within Tier 1 Performance. High-volume training, competition preparation, college placement pathway. Athletes train 4–6 days/week with structured periodization." },
       { term: "Full-Time Golf", avoid: "Elite program / Advanced program / Golf program", definition: "The full-time golf academy track within Tier 1 Performance. Mirrors the tennis structure — performance-first, competition-focused, college placement pathway. Uses Uneekor launch monitor technology for data-driven development." },
       { term: "The Tier 1 pathway", avoid: "Our programs", definition: "The full development arc from entry-level academy to college placement. A pathway implies progression and a destination — not just participation." },
-      { term: "APL (Athletic Performance Lab)", avoid: "Gym / Weight room / Fitness center / S&C room", definition: "The dedicated Strength & Conditioning (S&C) facility operating under Tier 1 within WSC. Uses data-driven training, sport-specific programming, and performance analytics technology. The only dedicated high-performance youth training facility of its kind in the Pacific Northwest. All Tier 1 athletes train here regardless of sport." },
+      { term: "APL (Athletic Performance Lab)", avoid: "Gym / Weight room / Fitness center / S&C room", definition: "The WSC fitness and performance programming lane. Uses data-driven training, adult fitness programming, sport-support training, and performance analytics technology. APL may support Tier 1 athletes, but APL should be branded as APL, with WSC added when parent-brand context is needed." },
     ],
   },
   {

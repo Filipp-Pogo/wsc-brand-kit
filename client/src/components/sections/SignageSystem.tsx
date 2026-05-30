@@ -3,8 +3,8 @@
  * Design: "The Performance Codex"
  *
  * Brand assignment rule:
- *   TIER 1  = academy program, athletes, APL, performance training, coaching staff
- *   WSC     = physical campus, facilities, membership, general public, events
+ *   TIER 1  = tennis/golf academy program, athletes, academy training, coaching staff
+ *   WSC     = physical campus, facilities, membership, general public, events, APL
  *   SHARED  = campus-wide policy that applies to all users regardless of program
  *
  * Covers all major sign types across the 67-acre WSC campus.
@@ -167,7 +167,7 @@ const SIGN_CATEGORIES: SignCategory[] = [
       {
         id: "apl-reserved",
         name: "APL — Private Session In Progress",
-        brand: "tier1",
+        brand: "wsc",
         vendorType: "door-placard",
         format: "Door Placard",
         size: "5\" × 7\"",
@@ -175,11 +175,11 @@ const SIGN_CATEGORIES: SignCategory[] = [
         defaultLines: ["ATHLETIC PERFORMANCE LAB", "PRIVATE SESSION", "IN PROGRESS"],
         editableLines: [false, false, false],
         notes:
-          "Fixed text — no editable fields. Used when the APL (Strength & Conditioning facility) is closed for a private training session. The APL is a Tier 1 sub-brand facility.",
+          "Fixed text — no editable fields. Used when the APL (Strength & Conditioning facility) is closed for a private training session. APL is WSC fitness and performance programming, not a Tier 1 sub-brand.",
         vendorSpec:
           "5×7\" brushed aluminum, UV print, wall-mount hardware included.",
         brandRationale:
-          "The APL (Athletic Performance Lab) is a Tier 1 sub-brand. All APL signage uses Tier 1 identity.",
+          "APL should lead with the APL name. Add WSC when parent-brand context is needed. Do not place APL under a Tier 1 header.",
       },
       // ── WSC reserved signs ──
       {
@@ -265,19 +265,19 @@ const SIGN_CATEGORIES: SignCategory[] = [
       {
         id: "apl-entrance",
         name: "Athletic Performance Lab (APL) — Entrance",
-        brand: "tier1",
+        brand: "wsc",
         vendorType: "wall-panel",
         format: "Wall Panel / Door Sign",
         size: "18\"×9\" Wall Panel  |  5\"×7\" Door Placard",
         material: "Dibond aluminum composite / Brushed aluminum",
-        defaultLines: ["ATHLETIC PERFORMANCE LAB", "TIER 1 PERFORMANCE"],
+        defaultLines: ["ATHLETIC PERFORMANCE LAB", "WOODINVILLE SPORTS CLUB"],
         editableLines: [false, false],
         notes:
-          "Fixed text. Identifies the S&C (Strength & Conditioning) facility entrance. The APL is a Tier 1 sub-brand — do not use WSC palette here.",
+          "Fixed text. Identifies the S&C (Strength & Conditioning) facility entrance. APL is WSC fitness and performance programming — do not use a Tier 1 header here.",
         vendorSpec:
           "Dibond 3mm, UV print, matte finish. Door placard: 5×7\" brushed aluminum.",
         brandRationale:
-          "The APL is a dedicated Tier 1 sub-brand facility. WSC branding would misrepresent the space as a general fitness area.",
+          "APL should be branded as APL, with WSC as the parent context when needed. Tier 1 branding would incorrectly frame APL as tennis/golf academy programming.",
       },
       {
         id: "golf-academy-zone",
@@ -466,7 +466,7 @@ const SIGN_CATEGORIES: SignCategory[] = [
       {
         id: "apl-directional",
         name: "Athletic Performance Lab — Directional",
-        brand: "tier1",
+        brand: "wsc",
         vendorType: "wall-panel",
         format: "Wall-Mount",
         size: "18\" × 6\"",
@@ -474,11 +474,11 @@ const SIGN_CATEGORIES: SignCategory[] = [
         defaultLines: ["ATHLETIC PERFORMANCE LAB", "↑"],
         editableLines: [false, true],
         notes:
-          "Edit arrow direction only. APL name is fixed — do not abbreviate or alter. This is the only Tier 1 directional sign because the APL is a dedicated academy facility.",
+          "Edit arrow direction only. APL name is fixed — do not abbreviate or alter. Use APL/WSC context rather than a Tier 1 header.",
         vendorSpec:
           "Dibond 3mm, UV print, matte finish.",
         brandRationale:
-          "The APL is a Tier 1 sub-brand facility. Pointing to it uses Tier 1 identity to signal that this is an academy space, not a general fitness area.",
+          "Pointing to APL should identify the APL destination clearly. Add WSC parent context when useful; do not frame it as a Tier 1 academy space.",
       },
       {
         id: "tier1-academy-directional",
@@ -528,20 +528,20 @@ const SIGN_CATEGORIES: SignCategory[] = [
       },
       {
         id: "apl-athletes-only",
-        name: "APL — Tier 1 Athletes Only",
-        brand: "tier1",
+        name: "APL — Authorized Entry",
+        brand: "wsc",
         vendorType: "door-placard",
         format: "Door Placard / Wall Panel",
         size: "5\"×7\" Door Placard  |  8.5\"×11\" Wall Panel",
         material: "Brushed aluminum / Foam board",
-        defaultLines: ["ATHLETIC PERFORMANCE LAB", "TIER 1 ATHLETES ONLY", "AUTHORIZED ENTRY"],
+        defaultLines: ["ATHLETIC PERFORMANCE LAB", "AUTHORIZED ENTRY ONLY", "COACH / STAFF ACCESS"],
         editableLines: [false, false, false],
         notes:
-          "Fixed text. Restricts APL access to enrolled Tier 1 athletes only. This is an academy policy, not a facility rule.",
+          "Fixed text. Restricts APL access without implying the space sits under Tier 1. Adjust access language only if the operating policy changes.",
         vendorSpec:
           "Placard: 5×7\" brushed aluminum. Panel: foam board 5mm, matte laminate.",
         brandRationale:
-          "The APL is a Tier 1 program space. Access restrictions are set by the academy, not by WSC facility management.",
+          "APL is WSC fitness and performance programming. Access restrictions should be stated plainly without using Tier 1 as the parent brand.",
       },
       // ── WSC policy signs ──
       {
@@ -1102,8 +1102,8 @@ function BrandLegend() {
         BRAND KEY:
       </div>
       {[
-        { color: "#3b82f6", label: "TIER 1", desc: "Academy program, athletes, APL, coaching staff" },
-        { color: "#0d1b2a", label: "WSC", desc: "Campus facilities, membership, general public" },
+        { color: "#3b82f6", label: "TIER 1", desc: "Tennis/golf academy program, athletes, coaching staff" },
+        { color: "#0d1b2a", label: "WSC", desc: "Campus facilities, membership, general public, APL" },
         { color: "#a0a5ad", label: "SHARED", desc: "Campus-wide policy — applies to all users" },
       ].map((item) => (
         <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "8px" }}>

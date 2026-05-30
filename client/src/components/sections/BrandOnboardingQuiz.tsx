@@ -32,7 +32,7 @@ const CHAPTERS: Chapter[] = [
     id: "brand-architecture",
     title: "Brand Architecture",
     section: "Foundation",
-    description: "Understand the two-brand structure (Tier 1 Performance + WSC) and which brand appears in which context. Tier 1 is the performance brand. WSC is the 67-acre platform it lives on.",
+    description: "Understand the WSC brand architecture and which brand appears in which context. Tier 1 is tennis/golf academy programming. APL is WSC fitness and performance programming.",
     questions: [
       {
         id: "ba-1",
@@ -60,15 +60,15 @@ const CHAPTERS: Chapter[] = [
       },
       {
         id: "ba-3",
-        question: "What is the correct relationship between Tier 1 Performance and WSC?",
+        question: "What is the correct relationship between Tier 1 Performance, APL, and WSC?",
         options: [
-          "They are competing brands targeting different demographics",
-          "Tier 1 is the performance brand; WSC is the platform and facility it lives on",
-          "WSC is the parent company; Tier 1 is a sub-brand of WSC",
-          "They are interchangeable names for the same organization",
+          "APL sits under Tier 1 because both are performance programs",
+          "Tier 1 and APL are distinct programming lanes inside WSC",
+          "WSC, Tier 1, and APL are interchangeable names for the same organization",
+          "APL should always use the Tier 1 header for credibility",
         ],
         correct: 1,
-        explanation: "Tier 1 is the performance brand responsible for all programming. WSC is the platform and 67-acre facility it operates within. They are distinct but work together.",
+        explanation: "WSC is the parent platform. Tier 1 is tennis/golf academy programming. APL is WSC fitness and performance programming, and should not be framed as a Tier 1 sub-brand.",
       },
       {
         id: "ba-4",

@@ -10,10 +10,10 @@ These are the most critical gaps. A new hire, vendor, or partner with no sports 
 ### 1.1 APL (Athletic Performance Lab) — Never Explained
 - **Issue:** APL appears 12+ times across the kit (signage, tone matrix, Instagram hashtags, channel guidelines, Claude prompt) but is never defined in the Terminology section or Brand Architecture section.
 - **Impact:** A new front desk hire or marketing vendor has no idea what APL is, what happens there, or how to talk about it.
-- **Fix:** Add APL to the Terminology section with a definition. Add it to Brand Architecture as a sub-brand.
+- **Fix:** Add APL to the Terminology section with a definition. Add it to Brand Architecture as a WSC fitness and performance programming lane, not as a Tier 1 sub-brand.
 
 ### 1.2 "Two Divisions / One System" — Used but Not Explained
-- **Issue:** This tagline appears as an approved phrase but nowhere does the kit explain what the two divisions ARE (Tennis + Golf) or what "One System" means (shared methodology, APL, coaching philosophy).
+- **Issue:** This tagline appears as an approved phrase but nowhere does the kit explain what the two divisions ARE (Tennis + Golf) or what "One System" means (shared Tier 1 academy methodology).
 - **Impact:** Someone could use this phrase correctly in a caption but not understand what they're saying.
 - **Fix:** Add an explanatory note in the Taglines section and Terminology section.
 
@@ -49,7 +49,7 @@ These are the most critical gaps. A new hire, vendor, or partner with no sports 
 
 ### 2.2 Brand Architecture — APL Listed as a Brand, Not Explained in Context
 - **Issue:** APL appears in the Brand Architecture relationship diagram data but is not shown in the visual diagram itself (only Tier 1 and WSC appear). A user reading the architecture section gets an incomplete picture.
-- **Fix:** Add APL as a sub-brand node under Tier 1 in the diagram.
+- **Fix:** Add APL as its own WSC fitness and performance lane in the diagram.
 
 ### 2.3 Tone Matrix — "Athlete / Coach Communications" Has No WSC Equivalent
 - **Issue:** The Tone Matrix has a Tier 1 row for "Athlete / Coach Communications" but no WSC equivalent for member/family communications. This creates an asymmetry that implies WSC doesn't communicate directly with members.
@@ -145,7 +145,7 @@ These are the most critical gaps. A new hire, vendor, or partner with no sports 
 |---|---|---|
 | 1 | Add "What We Do" plain-language explainer to Brand Architecture | Low |
 | 2 | Add APL definition to Terminology section | Low |
-| 3 | Add APL as sub-brand node to Brand Architecture diagram | Medium |
+| 3 | Add APL as its own WSC fitness and performance lane to Brand Architecture diagram | Medium |
 | 4 | Add WSC "Member / Family Communications" row to Tone Matrix | Low |
 | 5 | Fix "Train Without Limits" attribution in Claude System Prompt | Low |
 | 6 | Add WSC-specific examples to Voice Constants | Medium |

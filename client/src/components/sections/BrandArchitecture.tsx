@@ -7,7 +7,7 @@ export default function BrandArchitecture() {
       <SectionHeader
         label="01 — Foundation"
         title="Brand Architecture"
-        subtitle="Two public-facing brands. One performance identity. Clear lanes. Tier 1 is the performance brand. WSC is the platform it lives on."
+        subtitle="Clear lanes under WSC. Tier 1 is tennis and golf academy programming. APL is WSC fitness and performance programming."
         dark
       />
 
@@ -25,8 +25,8 @@ export default function BrandArchitecture() {
         </div>
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", color: "#e8e8e8", lineHeight: 1.75, margin: 0 }}>
           <strong style={{ color: "#ffffff" }}>Tier 1 Performance</strong> is a full-time tennis and golf performance academy for youth athletes, operating inside{" "}
-          <strong style={{ color: "#ffffff" }}>Woodinville Sports Club (WSC)</strong> — a 67-acre sports campus in Woodinville, WA. Tier 1 athletes train daily in the{" "}
-          <strong style={{ color: "#ffffff" }}>Athletic Performance Lab (APL)</strong>, a dedicated Strength &amp; Conditioning (S&amp;C) facility, alongside sport-specific court and course training. The program’s goal is competitive development and college placement. WSC is the physical home — a broader community sports club that also serves recreational members and families. These are two separate brands sharing one campus.
+          <strong style={{ color: "#ffffff" }}>Woodinville Sports Club (WSC)</strong> — a 67-acre sports campus in Woodinville, WA.{" "}
+          <strong style={{ color: "#ffffff" }}>Athletic Performance Lab (APL)</strong> is WSC's fitness and performance programming lane. APL can support Tier 1 athletes, but it does not sit under Tier 1. The clean rule: use Tier 1 for tennis/golf academy programming, use APL for fitness/performance programming, and add WSC when parent-brand context is needed.
         </p>
       </div>
 
@@ -146,11 +146,11 @@ export default function BrandArchitecture() {
           </div>
           <div className="flex flex-wrap items-center gap-3 text-sm" style={{ fontFamily: "Inter, sans-serif" }}>
             {[
+              { label: "WSC", sub: "Parent Platform & Facility", bg: "#0a0704", text: "#e8e0d3", note: "67-acre campus, Woodinville WA" },
+              { label: "+", bg: "transparent", text: "#3b82f6", sub: "" },
               { label: "TIER 1 PERFORMANCE", sub: "Performance Brand", bg: "#1a1d21", text: "#ffffff", note: "Tennis + Golf academies" },
               { label: "+", bg: "transparent", text: "#3b82f6", sub: "" },
-              { label: "APL", sub: "Athletic Performance Lab", bg: "#0d1b2a", text: "#ffffff", note: "S&C sub-brand under Tier 1" },
-              { label: "+", bg: "transparent", text: "#3b82f6", sub: "" },
-              { label: "WSC", sub: "Platform & Facility", bg: "#0a0704", text: "#e8e0d3", note: "67-acre campus, Woodinville WA" },
+              { label: "APL", sub: "Athletic Performance Lab", bg: "#0d1b2a", text: "#ffffff", note: "WSC fitness + performance lane" },
             ].map((item, i) =>
               item.label === "→" || item.label === "+" ? (
                 <span key={i} style={{ color: item.text, fontSize: "20px", fontWeight: 700 }}>{item.label}</span>
