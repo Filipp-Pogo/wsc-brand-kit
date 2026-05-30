@@ -44,7 +44,7 @@ const CHAPTERS: Chapter[] = [
           "Neither brand — only the APL name is used",
         ],
         correct: 1,
-        explanation: "Tier 1 Performance and WSC are the two public-facing brands. Tier 1 is the performance brand. WSC is the platform it lives on.",
+        explanation: "Tier 1 Performance and WSC are the two primary public-facing brand systems. APL is a named WSC fitness and performance programming lane, not a Tier 1 sub-brand.",
       },
       {
         id: "ba-2",
@@ -56,7 +56,7 @@ const CHAPTERS: Chapter[] = [
           "In the footer of every email",
         ],
         correct: 2,
-        explanation: "Tier 1 is the performance brand for all programming. WSC is the 67-acre platform it lives on. Never describe Tier 1 as 'a program at WSC' — it IS the performance brand.",
+        explanation: "Tier 1 is the tennis/golf academy performance brand. WSC is the 67-acre parent platform. APL should be framed as WSC fitness and performance programming.",
       },
       {
         id: "ba-3",

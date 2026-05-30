@@ -379,15 +379,15 @@ export const TONE_MATRIX = [
 
 export const MESSAGING_PILLARS = [
   {
-    pillar: "Performance Brand on a Platform",
+    pillar: "Programming Lanes on a Platform",
     brand: "Both Brands",
-    description: "Tier 1 is the performance brand. WSC is the platform it lives on. Use this framework in all brand introductions — it explains the relationship clearly.",
-    proofPoint: "Tier 1 is what you feel. WSC is where you feel it.",
+    description: "WSC is the parent platform. Tier 1 is the tennis and golf academy lane. APL is the WSC fitness and performance lane. Use this framework in brand introductions so each offering is framed correctly.",
+    proofPoint: "One campus. Clear lanes. No confused headers.",
     sampleMessages: [
       "Tier 1 Performance operates within WSC — the 67-acre campus that makes it possible.",
-      "The performance programming is Tier 1. The home is WSC.",
-      "Two brands. One campus. One standard.",
-      "WSC is the platform. Tier 1 is the product.",
+      "APL is WSC fitness and performance programming. Tier 1 is tennis and golf academy programming.",
+      "One campus. Distinct lanes. One standard.",
+      "WSC is the platform. Tier 1 and APL each have their own role.",
     ],
   },
   {
@@ -633,7 +633,7 @@ export const CHANNEL_GUIDELINES = [
     channel: "Website — Tier 1 Performance",
     brand: "Tier 1",
     frequency: "Ongoing",
-    purpose: "Primary marketing surface for all programming. Attracts serious athletes and families committed to elite development.",
+    purpose: "Primary marketing surface for tennis and golf academy programming. Attracts serious athletes and families committed to elite development.",
     dos: [
       "Lead with the competitive claim — attract serious athletes",
       "Use real proof: Penn, Harvard, Stanford, USC, Princeton, Miami, Auburn, Boston College",
@@ -643,7 +643,7 @@ export const CHANNEL_GUIDELINES = [
     donts: [
       "Soften the message or apologize for high standards",
       "Use WSC's warm parchment palette or light typography",
-      "Describe Tier 1 as 'a program at WSC' — it is THE performance brand",
+      "Use Tier 1 as the parent header for APL fitness or adult performance programming",
     ],
     samplePost: "WE DON'T BUILD RECREATIONAL PLAYERS. WE BUILD COMPETITORS.",
   },
@@ -656,11 +656,11 @@ export const CHANNEL_GUIDELINES = [
       "Welcoming, comprehensive, family-oriented tone",
       "Use the 'Your Saturday at WSC' narrative format",
       "Highlight member voice: testimonials and community stories",
-      "Reference Tier 1 as the performance programming available at the facility",
+      "Reference Tier 1 as tennis/golf academy programming and APL as WSC fitness/performance programming when relevant",
     ],
     donts: [
       "Use Tier 1's dark charcoal palette or Oswald font",
-      "Position WSC as a performance brand — that is Tier 1's role",
+      "Collapse Tier 1 and APL into the same brand lane",
       "Describe the facility without connecting it to the human culture inside",
     ],
     samplePost: "Your Saturday at WSC starts with a 7am junior clinic and ends with the whole family on the courts.",
